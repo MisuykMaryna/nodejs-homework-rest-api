@@ -23,7 +23,13 @@ password: {
   },
   token: {
     type: String,
-    default: ""}
+    default: "",
+  },
+  avatarURL: {
+  type: String,
+  avatarURL: String,
+  required:true,
+  }
 }, { versionKey: false, timestamps: true });
 
 userSchema.post("save", handleMongooseError);
